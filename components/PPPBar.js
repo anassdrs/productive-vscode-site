@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import fetchPPP from "purchasing-power-parity";
-import { useDetectAdBlock } from "adblock-detect-react";
+import { useDetectAdBlock as useDetectAdBlocktest } from "adblock-detect-react";
 import queryString from "query-string";
 
 const coupons = {
@@ -76,7 +76,7 @@ export function usePPP(originalPrice) {
  * =============================================================================
  */
 export default function PPPBar({ price }) {
-  const adBlockDetected = useDetectAdBlock();
+  const adBlockDetected = useDetectAdBlocktest();
   const { coupon, discount, country, finalPrice } = usePPP(price);
 
   if (adBlockDetected)

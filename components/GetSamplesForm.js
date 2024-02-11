@@ -14,6 +14,8 @@ export default function GetSamplesForm() {
     formEl.current && formEl.current.submit();
   }
 
+ console.log();
+
   return (
     <div className="bg-purple-400 bg-opacity-40 py-5 px-6 rounded lg:w-1/2 lg:max-w-3xl mx-auto text-left">
       <p className="mb-3 text-purple-100">
